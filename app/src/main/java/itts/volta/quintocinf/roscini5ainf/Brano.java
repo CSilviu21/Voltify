@@ -4,6 +4,16 @@ import java.util.Date;
 
 public class Brano {
     private String titolo;
+
+    public String getGenere() {
+        return genere;
+    }
+
+    public void setGenere(String genere) {
+        this.genere = genere;
+    }
+
+    private String genere;
     private int durata;
     private String autore;
     private Date datacreazione;
@@ -40,7 +50,8 @@ public class Brano {
         this.datacreazione = datacreazione;
     }
 
-    public Brano(String Titolo){
+
+    public Brano(String Titolo, String Genere){
         this.titolo=titolo;
 
     }
