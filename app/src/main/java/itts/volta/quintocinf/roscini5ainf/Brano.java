@@ -25,7 +25,7 @@ public class Brano {
     public void setTitolo(String titolo) {
         this.titolo = titolo;
     }
-
+z
     public int getDurata() {
         return durata;
     }
