@@ -24,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);//crea l'interfaccia grafica
         setContentView(R.layout.activity_main);//specifichiamo il layout
 
+
        titolo=(TextView)findViewById(R.id.TitoloCanzone); //Grazie al metodo findViewById riesco a recuperare il riferimento ad un oggetto collocato nell'interfaccia utente e lo descrivo per ogni elemento.
        autore=(TextView)findViewById(R.id.Autore);
        genere=(TextView)findViewById(R.id.Genere);
@@ -58,6 +59,8 @@ public class MainActivity extends AppCompatActivity {
                -show() lo utilizzo per rendere visibile il messaggio.
                In questo caso mostro il titolo del brano scelto.
                 */
+
+               //un metodo statico è un metodo che si può invocare senza aver instanziato la classe
 
            }
        });
