@@ -4,19 +4,10 @@ import java.util.Date;
 
 public class Brano {
     private String titolo;
-
-    public String getGenere() {
-        return genere;
-    }
-
-    public void setGenere(String genere) {
-        this.genere = genere;
-    }
-
     private String genere;
     private int durata;
     private String autore;
-    private Date datacreazione;
+
 
     public String getTitolo() {
         return titolo;
@@ -24,6 +15,14 @@ public class Brano {
 
     public void setTitolo(String titolo) {
         this.titolo = titolo;
+    }
+
+    public String getGenere() {
+        return genere;
+    }
+
+    public void setGenere(String genere) {
+        this.genere = genere;
     }
 
     public int getDurata() {
@@ -42,19 +41,21 @@ public class Brano {
         this.autore = autore;
     }
 
-    public Date getDatacreazione() {
-        return datacreazione;
-    }
-
-    public void setDatacreazione(Date datacreazione) {
-        this.datacreazione = datacreazione;
-    }
 
 
     public Brano(String Titolo, String Genere){
         this.titolo=titolo;
 
     }
+    @Override
+public String toString()  {
+        StringBuilder listab = new StringBuilder();
+        listab.append("\n titolo:" + this.titolo);
+        listab.append("\n genere:" + this.genere);
+        listab.append("\n durata:" + this.durata);
+        listab.append("\n autore:" + this.autore);
 
 
+        return listab.toString();
+}
 }
